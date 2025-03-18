@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches,
+        Shoes and More - Amazon.in</title>
+    <link rel="icon" type="image/x-icon" href="./asset/Favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-container">
+                <div class="nav-left">
+                    <a href="#" class="nav-logo">
+                        <img src="./asset/Amazon logo.png">
+                    </a>
+                </div>
+                <div class="nav-location">
+                    <a href="#">
+                        <span>Deliver to Mumbai 400078</span>
+                        <strong>Update Location</strong>
+                    </a>
+                </div>
+                <div class="nav-search">
+                    <form>
+                        <select>
+                            <option>All Cateogory</option>
+                            <option>Fresh</option>
+                            <option>Sell</option>
+                        </select>
+                        <input type="text" placeholder="Search Amazon">
+                        <button><img style="height: 20px; width: 20px;"
+                                src="https://cdn-icons-png.flaticon.com/128/49/49116.png"></button>
+                    </form>
+                </div>
+                <div class="nav-right">
+                    <a href="#">Hello, Sign in<br><strong>Accounts & Lists</strong></a>
+                    <a href="#">Returns<br><strong>& Orders</strong></a>
+                    <a style="display: flex;" href="#" class="nav-cart"><img
+                            style="height: 40px; width: 40px; margin-left: 0;" src="./asset/cart.png" alt="">
+                        <h4 style="margin-top: 25px; margin-left: 5px;">Cart</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-submenu">
+            <a href="#">All</a>
+            <a href="#">Fresh</a>
+            <a href="#">Sell</a>
+            <a href="#">Bestsellers</a>
+            <a href="#">Mobiles</a>
+            <a href="#">New Releases</a>
+            <a href="#">Electronics</a>
+            <a href="#">Fashion</a>
+            <a href="#">Amazon Pay</a>
+            <a href="#">Home & Kitchen</a>
+            <a href="#">Computers</a>
+            <a href="#">Books</a>
+            <a href="#">Car & Motorbike</a>
+        </div>
+    </header>
+    <section>
+        <main class="container">
+            <!-- Sidebar Filters -->
+            <aside class="sidebar">
+                <div class="filter-section">
+                    <h4>Delivery</h4>
+                    <ul>
+                        <li><input type="checkbox" checked> All Prime</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Prime Delivery</h4>
+                    <ul>
+                        <li><input type="checkbox"> Tomorrow by 11AM</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Delivery Day</h4>
+                    <ul>
+                        <li><input type="checkbox"> Get it by Tomorrow</li>
+                        <li><input type="checkbox"> Get it in 2 Days</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Category</h4>
+                    <h5 style="margin-bottom: 5px;">Mobiles & Accessories</h5>
+                    <ul>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> Mobile Accessories</p>
+                        </li>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> Mobile Broadband Devices</p>
+                        </li>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> Prepaid Phones</p>
+                        </li>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> Smartphones & Basic Mobiles</p>
+                        </li>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;">Smartwatches</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Brand</h4>
+                    <ul>
+                        <li><input type="checkbox"> Samsung</li>
+                        <li><input type="checkbox"> Apple</li>
+                        <li><input type="checkbox"> OnePlus</li>
+                    </ul>
+                </div>
+                <div style="display: flex; flex-direction: column;" class="filter-section">
+                    <div><h4>Customer Reviews</h4></div>
+                    <div style="margin-right: 30px;" class="rating">
+                        <input value="5" name="rate" id="star5" type="radio">
+                        <label title="text" for="star5"></label>
+                        <input value="4" name="rate" id="star4" type="radio">
+                        <label title="text" for="star4"></label>
+                        <input value="3" name="rate" id="star3" type="radio" checked="">
+                        <label title="text" for="star3"></label>
+                        <input value="2" name="rate" id="star2" type="radio">
+                        <label title="text" for="star2"></label>
+                        <input value="1" name="rate" id="star1" type="radio">
+                        <label title="text" for="star1"></label>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <h4>Item Condition</h4>
+                    <ul>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> New</p>
+                        </li>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> Renewed</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Price</h4>
+                    <h5 style="margin-bottom: 5px;">₹50–₹145,100+</h5>
+                    <input type="range" min="0" max="100000" value="50000">
+                </div>
+                <div class="filter-section">
+                    <h4>Deals & Discounts</h4>
+                    <ul>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> All Discounts</p>
+                        </li>
+                        <li>
+                            <p style="font-size:small; margin-left: 6px;"> Today's Deals</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Local Market</h4>
+                    <ul>
+                        <li><input type="checkbox"> Amazon Fresh</li>
+                    </ul>
+                </div>
+                <div class="filter-section">
+                    <h4>Made for Amazon Brands</h4>
+                    <ul>
+                        <li><input type="checkbox"> Made for Amazon</li>
+                    </ul>
+                </div>
+
+            </aside>
+
+            <!-- Product Listing -->
+            <section class="product-listing">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/610NUM9jlxL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">iQOO Neo 10R 5G (Moonknight Titanium, 8GB RAM, 256GB Storage) | Snapdragon 8s Gen 3...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81BGKLI+cWL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Redmi A4 5G (Sparkle Purple, 4GB RAM, 64GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61Io5-ojWUL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">OnePlus Nord CE4 Lite 5G (Super Silver, 8GB RAM, 128GB Storage)</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/610NUM9jlxL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">iQOO Neo 10R 5G (Moonknight Titanium, 12GB RAM, 256GB Storage) | Snapdragon 8s Gen 3...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Redmi A4 5G (Starry Black, 4GB RAM, 64GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/81BGKLI+cWL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Redmi A4 5G (Sparkle Purple, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120H...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/712tqhtIw1L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">POCO C61 Ethereal Blue 4GB RAM 64GB ROM</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/718HzJbvY1L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Redmi A4 5G (Starry Black, 4GB RAM, 128GB Storage) | Global Debut SD 4s Gen 2 | Segment Largest 6.88in 120Hz...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71ocQY+G2XL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">realme NARZO N65 5G (Amber Gold 8GB RAM, 128GB Storage) India's 1st D6300 5G Chipset | Ultra Slim Design |...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/5155PFA2N+L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">OnePlus Nord CE4 Lite 5G (Mega Blue, 8GB RAM, 128GB Storage)</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/5155PFA2N+L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">OnePlus Nord CE4 Lite 5G (Mega Blue, 8GB RAM, 128GB Storage)</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/717sEAdy02L._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">realme NARZO N65 5G (Deep Green 6GB RAM, 128GB Storage) India's 1st D6300 5G Chipset | Ultra Slim Design |..</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61JOYUJbhcL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 1">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">OnePlus Nord 4 5G (Mercurial Silver, 8GB RAM, 256GB Storage)</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="review-count">(1,234)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹25,000</span>
+                            <span class="original-price">₹30,000</span>
+                            <span class="discount">(17% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/61sY8BGOyEL._AC_UL480_FMwebp_QL65_.jpg" alt="Product 2">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">iQOO Z9x 5G (Storm Grey, 6GB RAM, 128GB Storage) | Snapdragon 6 Gen 1 with 560k+ AnTuTu Score |...</h3>
+                        <div class="product-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="review-count">(5,678)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">₹35,000</span>
+                            <span class="original-price">₹40,000</span>
+                            <span class="discount">(12% off)</span>
+                        </div>
+                        <div class="delivery-info">
+                            <span class="prime-badge">Prime</span>
+                            <span class="delivery-text">Get it by Tomorrow</span>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Pages -->
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </section>
+</body>
+
+</html>

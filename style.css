@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  padding-top: 110px;
+}
+
+/* Navbar Container */
+.navbar {
+  background-color: #131921;
+  position: fixed;
+  width: 100vw;
+  padding: 6px 20px;
+  color: white;
+  z-index: 1000;
+  top: 0;
+}
+
+/* Navbar Layout */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Amazon Logo */
+.nav-logo img {
+  width: 100px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+/* Delivery Location */
+.nav-location a {
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin-left: 20px;
+}
+
+.nav-location strong {
+  font-size: 14px;
+}
+
+/* Search Bar */
+.nav-search {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
+
+.nav-search form {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+}
+
+.nav-search select {
+  padding: 8px 15px;
+  border-radius: 5px 0px 0px 5px;
+  border: none;
+  background-color: #f3f3f3;
+  margin: 5px 0px;
+}
+
+.nav-search input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  border-radius: 0px 0px 0px px;
+  margin: 5px 0px;
+}
+
+.nav-search button {
+  padding: 8px 15px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #febd69;
+  margin: 5px 0px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Right Side Navigation */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.nav-right strong {
+  font-size: 16px;
+}
+
+.nav-cart {
+  font-size: 20px;
+}
+
+/* Submenu */
+.nav-submenu {
+  display: flex;
+  background-color: #232f3e;
+  padding: 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav-submenu a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+  margin-top: 2px;
+  font-size: 13px;
+}
+
+/* Main */
+
+.container {
+  display: flex;
+  margin: 20px;
+  gap: 15px;
+}
+
+/* Sidebar Filters */
+.sidebar {
+  width: 200px;
+  background-color: white;
+  padding: 20px;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h4 {
+  margin-bottom: 10px;
+}
+
+.filter-section ul {
+  list-style: none;
+}
+
+.filter-section ul li {
+  margin-bottom: 5px;
+}
+
+/* From Uiverse.io by andrew-demchenk0 */
+.rating:not(:checked) > input {
+  appearance: none;
+  position: absolute;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 30px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: "★";
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+/* Product Listing */
+.product-listing {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.product h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.product p {
+  font-size: 14px;
+  color: #b12704;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.product-image img {
+    width: 100%;
+    height: 278px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.product-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+    color: #272727;
+}
+
+.product-rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #ffa41c;
+}
+
+.review-count {
+    color: #007185;
+    font-size: 14px;
+}
+
+.product-price {
+    margin-bottom: 10px;
+}
+
+.current-price {
+    font-size: 20px;
+    color: #b12704;
+}
+
+.original-price {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.discount {
+    font-size: 14px;
+    color: #388e3c;
+    margin-left: 10px;
+}
+
+.delivery-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.prime-badge {
+    background-color: #ff9900;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.delivery-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.product button {
+  padding: 7px 12px;
+  background-color: #ffd814;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+    padding: 7px 12px;
+    background-color: #ffd814;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+
+/* Pagination */
+.pagination {
+    bottom: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #232f3e;
+    padding: 10px 15px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+}
+
+.pagination a:hover {
+    background-color: #a9a9a9;
+}
